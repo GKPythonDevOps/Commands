@@ -1,0 +1,39 @@
+[CLI]
+tree.com //a //f
+. activate
+where python
+rmdir <folder name>
+rmdir /Q /S <Folder Name>
+python -m pip install --upgrade pip
+
+[Poetry]
+
+for /F "tokens=*" %i in (requirements.txt) do poetry add %i
+    """
+    To add existing depenedncies to poetry using requirements.txt
+    """
+    
+poetry export -f requirements.txt --dev --output requirements.txt
+
+poetry config virtualenvs.create falseAnn
+[Git]
+
+do you want to merge the changes from master into your development branch?
+
+        git checkout -b <new branch name>
+        git merge master
+
+to check all the local and remote branches
+
+        git branch -a
+
+to push changes from local branch to remote branch
+
+        git push -u origin <branch name>
+
+[Python Interpreter]
+
+To clear:- 
+import os
+clear = lambda: os.system('cls') #on Windows System
+clear()
