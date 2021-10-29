@@ -1,0 +1,6 @@
+
+
+git pull --all
+git clone -b <branch name> <URL>
+git config --global core.autocrlf true ---> windows 
+git config --global core.autocrlf input ---> mac/linux

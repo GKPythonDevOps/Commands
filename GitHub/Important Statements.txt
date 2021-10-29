@@ -1,0 +1,16 @@
+Every clone is really a full backup of all the data
+
+Commit == snapshot
+
+BLOB == Binary large object (No Metadata) (In GIT, contents of file is stored in BLOB Object) (SHA-1 HASH)
+
+File system (Metadata)
+
+Tree == Directories (A directory listing of BLobs and Trees) (SHA-1 HASH)
+
+Commit == Snapshot of a working tree (Metadata) (Commit Objects) (SHA-1 HASH == Commit Object SHA 1- Hash is seen in GIT log) (Pointer to main /root tree)
+
+Please Refer to file system image in inmage folder
+
+With  Git,  every  time  you  commit,  or  save  the  state  of  yourproject,  Git  basically  takes  a  picture  of  what  all  your  files  look  like  at  that  moment  and  stores  areference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again,just  a  link  to  the  previous  identical  file  it  has  already  stored.  Git  thinks  about  its  data  more  like  astream of snapshots
+

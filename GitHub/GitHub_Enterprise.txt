@@ -1,4 +1,0 @@
-
-
-git pull --all
-git clone -b <branch name> <URL>
